@@ -12,7 +12,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	var FirstName, LastName, Email string
 	var AccountNumber, AccountBalance, accno, depositmoney, withdrawmoney, Fromaccno, Toaccno, TransferAmount, empid int
-
+    
 	for i := 0; i < 5; i++ {
 		fmt.Println("Choose an option:")
 		fmt.Println("1. Customer")
@@ -22,7 +22,7 @@ func main() {
 		choice := scanner.Text()
 		updatedCus := pack7.InitialiseCustomer()
 		emp := pack8.InitialiseEmployee()
-
+        
 		switch choice {
 		case "1":
 			fmt.Println("Please Enter Account number to login")
